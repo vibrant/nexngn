@@ -1,1348 +1,804 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="lang-en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revolutionary Rotary Machine Technology</title>
+    <meta name="description" content="A breakthrough rotary pumping mechanism delivering unprecedented efficiency as both compressor and internal combustion engine">
+    <link rel="alternate" hreflang="en" href="https://nexngn.com/">
+    <link rel="alternate" hreflang="pl" href="https://nexngn.com/?lang=pl">
+    <link rel="alternate" hreflang="x-default" href="https://nexngn.com/">
+    <script>(function(){var l=localStorage.getItem('nexngn-lang');if(l==='pl'){document.documentElement.className='lang-pl';document.documentElement.lang='pl';}})();</script>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --bg-primary: #0a0a1a;
-            --bg-secondary: #0f0f2a;
-            --bg-card: rgba(20, 20, 50, 0.6);
-            --accent-cyan: #00d4ff;
-            --accent-teal: #00ffc8;
-            --accent-blue: #4a90e2;
-            --text-primary: #ffffff;
-            --text-secondary: #a0a0c0;
-            --gradient-accent: linear-gradient(135deg, #00d4ff, #00ffc8);
-            --glass-bg: rgba(255, 255, 255, 0.05);
-            --glass-border: rgba(255, 255, 255, 0.1);
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-            background: var(--bg-primary);
-            color: var(--text-primary);
-            line-height: 1.6;
-        }
-
-        /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            z-index: 1000;
-            background: rgba(10, 10, 26, 0.9);
-            backdrop-filter: blur(20px);
-            border-bottom: 1px solid var(--glass-border);
-            padding: 1rem 2rem;
-        }
-
-        nav ul {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            list-style: none;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        nav a {
-            color: var(--text-secondary);
-            text-decoration: none;
-            font-size: 0.9rem;
-            font-weight: 500;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: var(--accent-cyan);
-        }
-
-        /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 6rem 2rem 4rem;
-            background: radial-gradient(ellipse at center, rgba(0, 212, 255, 0.1) 0%, transparent 70%),
-                        var(--bg-primary);
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero::before {
-            content: '';
-            position: absolute;
-            width: 600px;
-            height: 600px;
-            border-radius: 50%;
-            background: radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            animation: pulse 4s ease-in-out infinite;
-        }
-
-        @keyframes pulse {
-            0%, 100% { transform: translate(-50%, -50%) scale(1); opacity: 0.5; }
-            50% { transform: translate(-50%, -50%) scale(1.1); opacity: 0.8; }
-        }
-
-        .hero-content {
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero h1 {
-            font-size: clamp(2.5rem, 5vw, 4rem);
-            font-weight: 800;
-            margin-bottom: 1rem;
-            background: var(--gradient-accent);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .hero .tagline {
-            font-size: 1.25rem;
-            color: var(--text-secondary);
-            margin: 0 auto 2rem;
-            max-width: 600px;
-        }
-
-        .badges {
-            display: flex;
-            gap: 1rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .badge {
-            padding: 0.5rem 1.5rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-
-        .badge-success {
-            background: rgba(0, 255, 136, 0.15);
-            border: 1px solid rgba(0, 255, 136, 0.4);
-            color: #00ff88;
-        }
-
-        .badge-progress {
-            background: rgba(0, 212, 255, 0.15);
-            border: 1px solid rgba(0, 212, 255, 0.4);
-            color: var(--accent-cyan);
-        }
-
-        .badge-dot {
-            width: 8px;
-            height: 8px;
-            border-radius: 50%;
-            animation: blink 1.5s ease-in-out infinite;
-        }
-
-        .badge-success .badge-dot { background: #00ff88; }
-        .badge-progress .badge-dot { background: var(--accent-cyan); }
-
-        @keyframes blink {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.4; }
-        }
-
-        /* Sections */
-        section {
-            padding: 6rem 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        .section-subtitle {
-            text-align: center;
-            color: var(--text-secondary);
-            max-width: 600px;
-            margin: 0 auto 3rem;
-        }
-
-        /* Glass Cards */
-        .glass-card {
-            background: var(--glass-bg);
-            backdrop-filter: blur(10px);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            padding: 2rem;
-            transition: transform 0.3s ease, border-color 0.3s ease;
-        }
-
-        .glass-card:hover {
-            transform: translateY(-5px);
-            border-color: rgba(0, 212, 255, 0.3);
-        }
-
-        /* Innovation Section */
-        .innovation-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .innovation-card {
-            text-align: center;
-            padding: 3rem 2rem;
-        }
-
-        .innovation-card svg {
-            width: 80px;
-            height: 80px;
-            margin-bottom: 1.5rem;
-        }
-
-        .innovation-card h3 {
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
-            color: var(--accent-cyan);
-        }
-
-        /* Key Numbers Bar */
-        .key-numbers {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 1rem;
-            background: linear-gradient(135deg, rgba(0, 212, 255, 0.15), rgba(0, 255, 200, 0.1));
-            border: 1px solid rgba(0, 212, 255, 0.3);
-            border-radius: 20px;
-            padding: 2rem;
-            margin: 2rem 0 0.5rem;
-        }
-
-        @media (max-width: 800px) {
-            .key-numbers {
-                grid-template-columns: repeat(2, 1fr);
-            }
-        }
-
-        @media (max-width: 500px) {
-            .key-numbers {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .key-number {
-            text-align: center;
-        }
-
-        .key-value {
-            display: block;
-            font-size: 2.5rem;
-            font-weight: 800;
-            background: var(--gradient-accent);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .key-label {
-            display: block;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            margin-top: 0.25rem;
-        }
-
-        .key-numbers-note {
-            text-align: center;
-            font-size: 0.75rem;
-            color: var(--text-secondary);
-            opacity: 0.7;
-            margin-bottom: 2rem;
-        }
-
-        /* Cost Savings Callout */
-        .savings-callout {
-            background: linear-gradient(135deg, rgba(0, 255, 136, 0.15), rgba(0, 212, 255, 0.1));
-            border: 2px solid rgba(0, 255, 136, 0.4);
-            border-radius: 20px;
-            padding: 2rem;
-            margin: 2rem 0;
-            text-align: center;
-        }
-
-        .savings-callout h3 {
-            color: #00ff88;
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.5rem;
-        }
-
-        .savings-callout h3 svg {
-            width: 28px;
-            height: 28px;
-        }
-
-        .savings-highlight {
-            font-size: 3rem;
-            font-weight: 800;
-            color: #00ff88;
-            display: block;
-            margin: 1rem 0;
-        }
-
-        .savings-callout p {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            max-width: 600px;
-            margin: 0 auto;
-        }
-
-        .savings-detail {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-top: 1.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid rgba(0, 255, 136, 0.2);
-        }
-
-        @media (max-width: 600px) {
-            .savings-detail {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .savings-detail-item {
-            text-align: center;
-        }
-
-        .savings-detail-value {
-            font-size: 1.5rem;
-            font-weight: 700;
-            color: var(--accent-teal);
-        }
-
-        .savings-detail-label {
-            font-size: 0.8rem;
-            color: var(--text-secondary);
-            margin-top: 0.25rem;
-        }
-
-        /* Stats Grid */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1.5rem;
-            margin: 3rem 0;
-        }
-
-        .stat-card {
-            text-align: center;
-            padding: 2rem;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .stat-card::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 3px;
-            background: var(--gradient-accent);
-        }
-
-        .stat-value {
-            font-size: 3rem;
-            font-weight: 800;
-            background: var(--gradient-accent);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-
-        .stat-label {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-top: 0.5rem;
-        }
-
-        /* Applications Grid */
-        .applications-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-top: 2rem;
-        }
-
-        .app-card {
-            padding: 1.5rem;
-            display: flex;
-            align-items: flex-start;
-            gap: 1rem;
-        }
-
-        .app-icon {
-            width: 50px;
-            height: 50px;
-            flex-shrink: 0;
-            background: rgba(0, 212, 255, 0.1);
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .app-icon svg {
-            width: 28px;
-            height: 28px;
-            stroke: var(--accent-cyan);
-        }
-
-        .app-card h4 {
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .app-card p {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-
-        /* Comparison Table */
-        .comparison-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 2rem 0;
-            background: var(--glass-bg);
-            border-radius: 20px;
-            overflow: hidden;
-        }
-
-        .comparison-table th,
-        .comparison-table td {
-            padding: 1.25rem;
-            text-align: left;
-            border-bottom: 1px solid var(--glass-border);
-        }
-
-        .comparison-table th {
-            background: rgba(0, 212, 255, 0.1);
-            font-weight: 600;
-            color: var(--accent-cyan);
-        }
-
-        .comparison-table tr:last-child td {
-            border-bottom: none;
-        }
-
-        .comparison-table tr:hover td {
-            background: rgba(0, 212, 255, 0.05);
-        }
-
-        .highlight {
-            color: var(--accent-teal);
-            font-weight: 600;
-        }
-
-        /* Image Placeholder */
-        .image-placeholder {
-            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 255, 200, 0.05));
-            border: 2px dashed rgba(0, 212, 255, 0.3);
-            border-radius: 20px;
-            min-height: 300px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            color: var(--text-secondary);
-            margin: 2rem 0;
-            padding: 2rem;
-        }
-
-        .image-placeholder svg {
-            width: 60px;
-            height: 60px;
-            stroke: var(--accent-cyan);
-            opacity: 0.5;
-            margin-bottom: 1rem;
-        }
-
-        /* Obscured Tech Images */
-        .tech-image-container {
-            position: relative;
-            border-radius: 20px;
-            overflow: hidden;
-            background: var(--bg-secondary);
-        }
-
-        .tech-image {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            filter: brightness(0.9) contrast(1.1);
-            transition: filter 0.5s ease;
-        }
-
-        .tech-image-container:hover .tech-image {
-            filter: brightness(1) contrast(1.15);
-        }
-
-        .tech-image-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(135deg, rgba(0, 212, 255, 0.1), rgba(0, 255, 200, 0.05));
-            pointer-events: none;
-        }
-
-        .tech-image-label {
-            position: absolute;
-            bottom: 1.5rem;
-            left: 50%;
-            transform: translateX(-50%);
-            background: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(10px);
-            padding: 0.5rem 1.5rem;
-            border-radius: 50px;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-            border: 1px solid var(--glass-border);
-        }
-
-        /* Hero Background Image */
-        .hero-bg-image {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            object-position: center;
-            filter: brightness(0.6) contrast(1.1);
-            opacity: 0.4;
-            z-index: 0;
-        }
-
-        /* Contact Section */
-        .contact-section {
-            background: var(--bg-primary);
-            padding: 6rem 2rem;
-            text-align: center;
-        }
-
-        .contact-card {
-            max-width: 500px;
-            margin: 0 auto;
-            padding: 3rem;
-        }
-
-        .contact-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-title {
-            color: var(--text-secondary);
-            font-size: 0.95rem;
-            margin-bottom: 2rem;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 0.75rem;
-            padding: 1rem;
-            margin: 0.5rem 0;
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            border-radius: 12px;
-            color: var(--text-primary);
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .contact-item:hover {
-            border-color: var(--accent-cyan);
-            background: rgba(0, 212, 255, 0.1);
-        }
-
-        .contact-item svg {
-            width: 20px;
-            height: 20px;
-            stroke: var(--accent-cyan);
-        }
-
-        /* Benefits Section */
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        @media (max-width: 900px) {
-            .benefits-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        .benefit-category {
-            padding: 2rem;
-        }
-
-        .benefit-category h3 {
-            font-size: 1.1rem;
-            color: var(--accent-cyan);
-            margin-bottom: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-        }
-
-        .benefit-category svg {
-            width: 24px;
-            height: 24px;
-        }
-
-        .benefit-list {
-            list-style: none;
-        }
-
-        .benefit-list li {
-            padding: 0.75rem 0;
-            border-bottom: 1px solid var(--glass-border);
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            font-size: 0.95rem;
-        }
-
-        .benefit-list li:last-child {
-            border-bottom: none;
-        }
-
-        .benefit-list li::before {
-            content: '';
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            background: var(--accent-teal);
-            flex-shrink: 0;
-        }
-
-        /* Roadmap */
-        .roadmap {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-top: 3rem;
-            position: relative;
-            flex-wrap: wrap;
-            gap: 2rem;
-        }
-
-        .roadmap::before {
-            content: '';
-            position: absolute;
-            top: 30px;
-            left: 10%;
-            right: 10%;
-            height: 3px;
-            background: var(--glass-border);
-            z-index: 0;
-        }
-
-        .roadmap-item {
-            flex: 1;
-            min-width: 200px;
-            text-align: center;
-            position: relative;
-            z-index: 1;
-        }
-
-        .roadmap-dot {
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            margin: 0 auto 1rem;
-            position: relative;
-        }
-
-        .roadmap-dot.completed {
-            background: var(--accent-teal);
-            box-shadow: 0 0 20px rgba(0, 255, 200, 0.5);
-        }
-
-        .roadmap-dot.current {
-            background: var(--accent-cyan);
-            box-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
-            animation: pulse-dot 2s ease-in-out infinite;
-        }
-
-        .roadmap-dot.future {
-            background: var(--glass-border);
-        }
-
-        @keyframes pulse-dot {
-            0%, 100% { box-shadow: 0 0 20px rgba(0, 212, 255, 0.5); }
-            50% { box-shadow: 0 0 30px rgba(0, 212, 255, 0.8); }
-        }
-
-        .roadmap-item h4 {
-            font-size: 1rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .roadmap-item p {
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-
-        /* Two Column Layout */
-        .two-columns {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 3rem;
-            align-items: start;
-        }
-
-        @media (max-width: 800px) {
-            .two-columns {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            padding: 3rem 2rem;
-            border-top: 1px solid var(--glass-border);
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            nav ul {
-                gap: 1rem;
-                font-size: 0.8rem;
-            }
-
-            .hero h1 {
-                font-size: 2rem;
-            }
-
-            .badges {
-                flex-direction: column;
-                align-items: center;
-            }
-
-            .stat-value {
-                font-size: 2.5rem;
-            }
-
-            section {
-                padding: 4rem 1rem;
-            }
-        }
-
-        /* Scroll animations */
-        .fade-in {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#innovation">Innovation</a></li>
-            <li><a href="#compressor">Compressor</a></li>
-            <li><a href="#engine">Engine</a></li>
-            <li><a href="#specs">Specifications</a></li>
-            <li><a href="#benefits">Benefits</a></li>
-            <li><a href="#roadmap">Roadmap</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-lg-none" href="#" style="color: var(--accent-cyan); font-weight: 700; font-size: 0.9rem;">NexNGN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mainNav">
+                <ul class="navbar-nav mx-auto gap-lg-3">
+                    <li class="nav-item"><a class="nav-link" href="#innovation"><span class="en">Innovation</span><span class="pl">Innowacja</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#compressor"><span class="en">Compressor</span><span class="pl">Kompresor</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#railway"><span class="en">Railway</span><span class="pl">Kolej</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#engine"><span class="en">Engine</span><span class="pl">Silnik</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#specs"><span class="en">Specifications</span><span class="pl">Specyfikacja</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#benefits"><span class="en">Benefits</span><span class="pl">Korzyści</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#roadmap"><span class="en">Roadmap</span><span class="pl">Plan rozwoju</span></a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact"><span class="en">Contact</span><span class="pl">Kontakt</span></a></li>
+                </ul>
+                <div class="lang-switcher">
+                    <button class="lang-btn active" data-lang="en" title="English">
+                        <span class="lang-flag">&#127468;&#127463;</span>
+                        <span class="lang-code">EN</span>
+                    </button>
+                    <button class="lang-btn" data-lang="pl" title="Polski">
+                        <span class="lang-flag">&#127477;&#127473;</span>
+                        <span class="lang-code">PL</span>
+                    </button>
+                </div>
+            </div>
+        </div>
     </nav>
 
+    <!-- Hero -->
     <section class="hero">
         <img src="engine-assets/engine-1.png" alt="" class="hero-bg-image" aria-hidden="true">
-        <div class="hero-content">
-            <h1>Revolutionary Rotary Machine Technology</h1>
-            <p class="tagline">A breakthrough rotary pumping mechanism delivering unprecedented efficiency as both compressor and internal combustion engine</p>
-            <div class="badges">
-                <span class="badge badge-success">
+        <div class="hero-content px-3">
+            <h1><span class="en">Revolutionary Rotary Machine Technology</span><span class="pl">Rewolucyjna Technologia Maszyny Rotacyjnej</span></h1>
+            <p class="tagline"><span class="en">A breakthrough rotary pumping mechanism delivering unprecedented efficiency as both compressor and internal combustion engine</span><span class="pl">Przełomowy rotacyjny mechanizm pompujący zapewniający bezprecedensową wydajność zarówno jako kompresor, jak i silnik spalinowy</span></p>
+            <div class="d-flex flex-wrap gap-2 justify-content-center">
+                <span class="status-badge status-badge-success">
                     <span class="badge-dot"></span>
-                    Compressor: Working Prototype
+                    <span class="en">Compressor: Working Prototype</span><span class="pl">Kompresor: Działający Prototyp</span>
                 </span>
-                <span class="badge badge-progress">
+                <span class="status-badge status-badge-progress">
                     <span class="badge-dot"></span>
-                    Engine: Design Phase
+                    <span class="en">Engine: Design Phase</span><span class="pl">Silnik: Faza Projektowa</span>
                 </span>
-                <span class="badge badge-success">
+                <span class="status-badge status-badge-success">
                     <span class="badge-dot"></span>
-                    9 Patents Registered | 5 Pending
+                    <span class="en">9 Patents Registered | 5 Pending</span><span class="pl">9 Patentów Zarejestrowanych | 5 Oczekujących</span>
                 </span>
             </div>
         </div>
     </section>
 
-    <section id="innovation">
-        <h2 class="section-title fade-in">Core Innovation</h2>
-        <p class="section-subtitle fade-in">A novel rotary pumping mechanism that eliminates the limitations of traditional piston and rotary designs</p>
+    <!-- Core Innovation -->
+    <section id="innovation" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center fade-in"><span class="en">Core Innovation</span><span class="pl">Kluczowa Innowacja</span></h2>
+            <p class="section-subtitle text-center mb-4 fade-in"><span class="en">A novel rotary pumping mechanism that eliminates the limitations of traditional piston and rotary designs</span><span class="pl">Nowatorski rotacyjny mechanizm pompujący eliminujący ograniczenia tradycyjnych konstrukcji tłokowych i rotacyjnych</span></p>
 
-        <!-- Key Numbers Highlight -->
-        <div class="key-numbers fade-in">
-            <div class="key-number">
-                <span class="key-value">30%</span>
-                <span class="key-label">Energy Savings</span>
+            <!-- Key Numbers -->
+            <div class="key-numbers fade-in mb-1">
+                <div class="row text-center">
+                    <div class="col-6 col-md-3 mb-3 mb-md-0">
+                        <span class="key-value">30%</span>
+                        <span class="key-label"><span class="en">Energy Savings</span><span class="pl">Oszczędność Energii</span></span>
+                    </div>
+                    <div class="col-6 col-md-3 mb-3 mb-md-0">
+                        <span class="key-value">2-3x</span>
+                        <span class="key-label"><span class="en">Lighter Weight</span><span class="pl">Mniejsza Waga</span></span>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <span class="key-value">70-80%</span>
+                        <span class="key-label"><span class="en">Of Compressor Cost is Electricity*</span><span class="pl">Kosztów Kompresora to Elektryczność*</span></span>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <span class="key-value">$14K+</span>
+                        <span class="key-label"><span class="en">Annual Savings per 100HP Unit</span><span class="pl">Roczne Oszczędności na Jednostkę 100HP</span></span>
+                    </div>
+                </div>
             </div>
-            <div class="key-number">
-                <span class="key-value">2-3x</span>
-                <span class="key-label">Lighter Weight</span>
-            </div>
-            <div class="key-number">
-                <span class="key-value">70-80%</span>
-                <span class="key-label">Of Compressor Cost is Electricity*</span>
-            </div>
-            <div class="key-number">
-                <span class="key-value">$14K+</span>
-                <span class="key-label">Annual Savings per 100HP Unit</span>
-            </div>
-        </div>
-        <p class="key-numbers-note fade-in">*Industry average according to U.S. Department of Energy studies</p>
+            <p class="key-numbers-note text-center fade-in mb-4"><span class="en">*Industry average according to U.S. Department of Energy studies</span><span class="pl">*Średnia branżowa według badań Departamentu Energii USA</span></p>
 
-        <div class="tech-image-container fade-in" style="height: 350px;">
-            <img src="engine-assets/wireframe-1.png" alt="Rotary Machine Concept" class="tech-image">
-            <div class="tech-image-overlay"></div>
-            <span class="tech-image-label">Proprietary Design - Patent Pending</span>
-        </div>
+            <!-- Tech Image -->
+            <div class="tech-image-container fade-in mb-5" style="height: 350px;">
+                <img src="engine-assets/wireframe-1.png" alt="Rotary Machine Concept" class="tech-image">
+                <div class="tech-image-overlay"></div>
+                <span class="tech-image-label"><span class="en">Proprietary Design - Patent Pending</span><span class="pl">Autorski Projekt - Patent w Toku</span></span>
+            </div>
 
-        <div class="innovation-grid">
-            <div class="glass-card innovation-card fade-in">
-                <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5">
-                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                    <path d="M2 17l10 5 10-5"/>
-                    <path d="M2 12l10 5 10-5"/>
-                </svg>
-                <h3>Simplified Architecture</h3>
-                <p><strong>60%+ fewer components</strong> than piston engines. Results in <strong>20%+ longer lifespan</strong> and dramatically reduced maintenance costs.</p>
-            </div>
-            <div class="glass-card innovation-card fade-in">
-                <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5">
-                    <circle cx="12" cy="12" r="10"/>
-                    <path d="M12 6v6l4 2"/>
-                </svg>
-                <h3>Double Power Cycles</h3>
-                <p>Two-stroke equivalent delivers <strong>4x power output</strong> per rotation. Achieves <strong>104 kW/L</strong> vs 40-60 kW/L for piston engines.</p>
-            </div>
-            <div class="glass-card innovation-card fade-in">
-                <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5">
-                    <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
-                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
-                    <line x1="12" y1="22.08" x2="12" y2="12"/>
-                </svg>
-                <h3>30% Lower Energy Use</h3>
-                <p>Reduced friction losses translate to <strong>30% electricity savings</strong>. For industrial compressors, this means <strong>$14,000+/year</strong> in reduced operating costs.</p>
+            <!-- Innovation Cards -->
+            <div class="row g-4">
+                <div class="col-md-4 fade-in">
+                    <div class="glass-card innovation-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5">
+                            <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                            <path d="M2 17l10 5 10-5"/>
+                            <path d="M2 12l10 5 10-5"/>
+                        </svg>
+                        <h3><span class="en">Simplified Architecture</span><span class="pl">Uproszczona Architektura</span></h3>
+                        <p class="en"><strong>60%+ fewer components</strong> than piston engines. Results in <strong>20%+ longer lifespan</strong> and dramatically reduced maintenance costs.</p>
+                        <p class="pl"><strong>60%+ mniej komponentów</strong> niż silniki tłokowe. Efekt: <strong>20%+ dłuższa żywotność</strong> i radykalnie niższe koszty utrzymania.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="glass-card innovation-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+                        </svg>
+                        <h3><span class="en">Double Power Cycles</span><span class="pl">Podwójne Cykle Mocy</span></h3>
+                        <p class="en">Two-stroke equivalent delivers <strong>4x power output</strong> per rotation. Achieves <strong>104 kW/L</strong> vs 40-60 kW/L for piston engines.</p>
+                        <p class="pl">Odpowiednik dwusuwowy zapewnia <strong>4x większą moc</strong> na obrót. Osiąga <strong>104 kW/L</strong> wobec 40-60 kW/L dla silników tłokowych.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="glass-card innovation-card">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="1.5">
+                            <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                            <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+                            <line x1="12" y1="22.08" x2="12" y2="12"/>
+                        </svg>
+                        <h3><span class="en">30% Lower Energy Use</span><span class="pl">30% Mniejsze Zużycie Energii</span></h3>
+                        <p class="en">Reduced friction losses translate to <strong>30% electricity savings</strong>. For industrial compressors, this means <strong>$14,000+/year</strong> in reduced operating costs.</p>
+                        <p class="pl">Zmniejszone straty tarcia przekładają się na <strong>30% oszczędności energii</strong>. Dla kompresorów przemysłowych oznacza to <strong>$14,000+/rok</strong> niższych kosztów operacyjnych.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="compressor" style="background: var(--bg-secondary); max-width: none; padding: 6rem 2rem;">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <h2 class="section-title fade-in">Compressor Application</h2>
-            <p class="section-subtitle fade-in">Working prototype demonstrating revolutionary performance improvements</p>
+    <!-- Compressor Application -->
+    <section id="compressor" class="py-5 bg-section-alt">
+        <div class="container">
+            <h2 class="section-title text-center fade-in"><span class="en">Compressor Application</span><span class="pl">Zastosowanie jako Kompresor</span></h2>
+            <p class="section-subtitle text-center mb-4 fade-in"><span class="en">Working prototype demonstrating revolutionary performance improvements</span><span class="pl">Działający prototyp demonstrujący rewolucyjną poprawę wydajności</span></p>
 
-            <div class="stats-grid">
-                <div class="glass-card stat-card fade-in">
-                    <div class="stat-value">30%</div>
-                    <div class="stat-label">Electricity Savings</div>
+            <!-- Stats -->
+            <div class="row g-3 my-4">
+                <div class="col-6 col-lg fade-in">
+                    <div class="glass-card stat-card">
+                        <div class="stat-value">30%</div>
+                        <div class="stat-label"><span class="en">Electricity Savings</span><span class="pl">Oszczędność Energii</span></div>
+                    </div>
                 </div>
-                <div class="glass-card stat-card fade-in">
-                    <div class="stat-value">60%+</div>
-                    <div class="stat-label">Weight Reduction</div>
+                <div class="col-6 col-lg fade-in">
+                    <div class="glass-card stat-card">
+                        <div class="stat-value">60%+</div>
+                        <div class="stat-label"><span class="en">Weight Reduction</span><span class="pl">Redukcja Wagi</span></div>
+                    </div>
                 </div>
-                <div class="glass-card stat-card fade-in">
-                    <div class="stat-value">4x</div>
-                    <div class="stat-label">Quieter Operation</div>
+                <div class="col-6 col-lg fade-in">
+                    <div class="glass-card stat-card">
+                        <div class="stat-value">4x</div>
+                        <div class="stat-label"><span class="en">Quieter Operation</span><span class="pl">Cichsza Praca</span></div>
+                    </div>
                 </div>
-                <div class="glass-card stat-card fade-in">
-                    <div class="stat-value">30%+</div>
-                    <div class="stat-label">Lower Friction</div>
+                <div class="col-6 col-lg fade-in">
+                    <div class="glass-card stat-card">
+                        <div class="stat-value">30%+</div>
+                        <div class="stat-label"><span class="en">Lower Friction</span><span class="pl">Mniejsze Tarcie</span></div>
+                    </div>
                 </div>
-                <div class="glass-card stat-card fade-in">
-                    <div class="stat-value">20%+</div>
-                    <div class="stat-label">Increased Durability</div>
+                <div class="col-12 col-lg fade-in">
+                    <div class="glass-card stat-card">
+                        <div class="stat-value">20%+</div>
+                        <div class="stat-label"><span class="en">Increased Durability</span><span class="pl">Większa Trwałość</span></div>
+                    </div>
                 </div>
             </div>
 
             <!-- Cost Savings Callout -->
-            <div class="savings-callout fade-in">
-                <h3>
+            <div class="savings-callout text-center fade-in my-4">
+                <h3 class="d-flex align-items-center justify-content-center gap-2 mb-3">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
                     </svg>
-                    Massive Cost Reduction Potential
+                    <span class="en">Massive Cost Reduction Potential</span><span class="pl">Ogromny Potencjał Redukcji Kosztów</span>
                 </h3>
-                <p>Electricity accounts for <strong>70-80% of a compressor's lifetime operating cost</strong>. Our 30% energy savings directly translates to dramatic cost reductions.</p>
-                <span class="savings-highlight">$14,400+/year</span>
-                <p>Potential savings per 100 HP industrial compressor unit</p>
-                <div class="savings-detail">
-                    <div class="savings-detail-item">
+                <p class="en">Electricity accounts for <strong>70-80% of a compressor's lifetime operating cost</strong>. Our 30% energy savings directly translates to dramatic cost reductions.</p>
+                <p class="pl">Elektryczność stanowi <strong>70-80% kosztów eksploatacji kompresora w całym okresie użytkowania</strong>. Nasze 30% oszczędności energii bezpośrednio przekłada się na dramatyczną redukcję kosztów.</p>
+                <span class="savings-highlight">$14,400+/<span class="en">year</span><span class="pl">rok</span></span>
+                <p><span class="en">Potential savings per 100 HP industrial compressor unit</span><span class="pl">Potencjalne oszczędności na jednostkę kompresora przemysłowego 100 HP</span></p>
+                <div class="row g-3 mt-3 pt-3" style="border-top: 1px solid rgba(0, 255, 136, 0.2);">
+                    <div class="col-md-4 text-center">
                         <div class="savings-detail-value">$144,000+</div>
-                        <div class="savings-detail-label">10-Year Savings per Unit</div>
+                        <div class="savings-detail-label"><span class="en">10-Year Savings per Unit</span><span class="pl">Oszczędności 10-letnie na Jednostkę</span></div>
                     </div>
-                    <div class="savings-detail-item">
+                    <div class="col-md-4 text-center">
                         <div class="savings-detail-value">~$48,000</div>
-                        <div class="savings-detail-label">Typical Annual Energy Cost*</div>
+                        <div class="savings-detail-label"><span class="en">Typical Annual Energy Cost*</span><span class="pl">Typowy Roczny Koszt Energii*</span></div>
                     </div>
-                    <div class="savings-detail-item">
-                        <div class="savings-detail-value">ROI in Months</div>
-                        <div class="savings-detail-label">Not Years</div>
+                    <div class="col-md-4 text-center">
+                        <div class="savings-detail-value"><span class="en">ROI in Months</span><span class="pl">ROI w Miesiącach</span></div>
+                        <div class="savings-detail-label"><span class="en">Not Years</span><span class="pl">Nie Latach</span></div>
                     </div>
                 </div>
-                <p style="font-size: 0.75rem; margin-top: 1.5rem; opacity: 0.7;">*Based on 100HP compressor operating at $0.10/kWh, 8,760 hours/year</p>
+                <p style="font-size: 0.75rem; margin-top: 1.5rem; opacity: 0.7;"><span class="en">*Based on 100HP compressor operating at $0.10/kWh, 8,760 hours/year</span><span class="pl">*Na podstawie kompresora 100HP pracującego przy $0.10/kWh, 8 760 godzin/rok</span></p>
             </div>
 
-            <h3 style="text-align: center; margin: 3rem 0 1rem; color: var(--text-secondary);">Industry Applications</h3>
+            <h3 class="text-center mt-5 mb-3" style="color: var(--text-secondary);"><span class="en">Industry Applications</span><span class="pl">Zastosowania Przemysłowe</span></h3>
 
-            <div class="applications-grid">
-                <div class="glass-card app-card fade-in">
-                    <div class="app-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
-                            <path d="M5 17h14M7 9h10l2 8H5l2-8zM9 9V6a3 3 0 016 0v3"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <h4>Vehicles</h4>
-                        <p>HVAC systems and pneumatic equipment for military and civilian vehicles requiring compact, reliable air supply</p>
-                    </div>
-                </div>
-                <div class="glass-card app-card fade-in">
-                    <div class="app-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
-                            <path d="M12 2L4 8v14h16V8l-8-6z"/>
-                            <path d="M9 22V12h6v10"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <h4>Aviation</h4>
-                        <p>Pilot suit air supply systems where weight and reliability are critical factors</p>
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3 fade-in">
+                    <div class="glass-card d-flex align-items-start gap-3 h-100">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path d="M5 17h14M7 9h10l2 8H5l2-8zM9 9V6a3 3 0 016 0v3"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4><span class="en">Vehicles</span><span class="pl">Pojazdy</span></h4>
+                            <p class="en">HVAC systems and pneumatic equipment for military and civilian vehicles requiring compact, reliable air supply</p>
+                            <p class="pl">Systemy HVAC i urządzenia pneumatyczne dla pojazdów wojskowych i cywilnych wymagających kompaktowego, niezawodnego zasilania powietrzem</p>
+                        </div>
                     </div>
                 </div>
-                <div class="glass-card app-card fade-in">
-                    <div class="app-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
-                            <path d="M2 20h20M5 20V8l7-5 7 5v12"/>
-                            <path d="M9 20v-6h6v6"/>
-                        </svg>
-                    </div>
-                    <div>
-                        <h4>Naval Applications</h4>
-                        <p>Diving air systems and compact installations for space-constrained marine environments</p>
+                <div class="col-md-6 col-lg-3 fade-in">
+                    <div class="glass-card d-flex align-items-start gap-3 h-100">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path d="M12 2L4 8v14h16V8l-8-6z"/>
+                                <path d="M9 22V12h6v10"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4><span class="en">Aviation</span><span class="pl">Lotnictwo</span></h4>
+                            <p class="en">Pilot suit air supply systems where weight and reliability are critical factors</p>
+                            <p class="pl">Systemy zasilania powietrzem kombinezonów pilotów, gdzie waga i niezawodność są kluczowymi czynnikami</p>
+                        </div>
                     </div>
                 </div>
-                <div class="glass-card app-card fade-in">
-                    <div class="app-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
-                            <circle cx="12" cy="12" r="10"/>
-                            <path d="M12 6v6l4 2"/>
-                        </svg>
+                <div class="col-md-6 col-lg-3 fade-in">
+                    <div class="glass-card d-flex align-items-start gap-3 h-100">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path d="M2 20h20M5 20V8l7-5 7 5v12"/>
+                                <path d="M9 20v-6h6v6"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4><span class="en">Naval Applications</span><span class="pl">Zastosowania Morskie</span></h4>
+                            <p class="en">Diving air systems and compact installations for space-constrained marine environments</p>
+                            <p class="pl">Systemy powietrza nurkowego i kompaktowe instalacje dla środowisk morskich o ograniczonej przestrzeni</p>
+                        </div>
                     </div>
-                    <div>
-                        <h4>Rescue Equipment</h4>
-                        <p>Portable pneumatic tools for emergency response requiring lightweight, reliable operation</p>
+                </div>
+                <div class="col-md-6 col-lg-3 fade-in">
+                    <div class="glass-card d-flex align-items-start gap-3 h-100">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4><span class="en">Rescue Equipment</span><span class="pl">Sprzęt Ratunkowy</span></h4>
+                            <p class="en">Portable pneumatic tools for emergency response requiring lightweight, reliable operation</p>
+                            <p class="pl">Przenośne narzędzia pneumatyczne do akcji ratunkowych wymagające lekkiej, niezawodnej pracy</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="engine">
-        <h2 class="section-title fade-in">Engine Application</h2>
-        <p class="section-subtitle fade-in">Projected specifications based on design simulations for 1L displacement</p>
+    <!-- Railway & Transport Applications -->
+    <section id="railway" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center fade-in"><span class="en">Railway & Transport Applications</span><span class="pl">Zastosowania Kolejowe i Transportowe</span></h2>
+            <p class="section-subtitle text-center mb-5 fade-in"><span class="en">Compressed air is the lifeblood of modern rail — powering braking, doors, suspension, and critical auxiliary systems across every train in operation</span><span class="pl">Sprężone powietrze to krew nowoczesnej kolei — napędza hamulce, drzwi, zawieszenie i krytyczne systemy pomocnicze w każdym pociągu</span></p>
 
-        <div class="two-columns">
-            <div class="fade-in">
-                <div class="tech-image-container" style="height: 100%; min-height: 350px; background: #f5f5f5;">
-                    <img src="engine-assets/engine-3.png" alt="Engine Cross Section" class="tech-image" style="filter: none;">
-                    <span class="tech-image-label">Internal Architecture</span>
+            <div class="row g-4">
+                <!-- Air Brake Systems -->
+                <div class="col-md-6 fade-in">
+                    <div class="railway-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <i class="bi bi-shield-check"></i>
+                            <h4 class="mb-0"><span class="en">Air Brake Systems</span><span class="pl">Systemy Hamulców Pneumatycznych</span></h4>
+                        </div>
+                        <p class="text-white-50 mb-2 en" style="font-size: 0.9rem;">The primary application — compressed air stored in the main reservoir is the source for all braking systems.</p>
+                        <p class="text-white-50 mb-2 pl" style="font-size: 0.9rem;">Główne zastosowanie — sprężone powietrze magazynowane w zbiorniku głównym jest źródłem dla wszystkich systemów hamulcowych.</p>
+                        <ul class="en">
+                            <li>Operating pressure: 125-150 psi (8.6-10.3 bar)</li>
+                            <li>Automatic air brakes (standard on all trains)</li>
+                            <li>Electro-pneumatic (EP) brakes for high-speed trains</li>
+                            <li>Emergency brake activation</li>
+                            <li>Fail-safe design — air loss automatically applies brakes</li>
+                        </ul>
+                        <ul class="pl">
+                            <li>Ciśnienie robocze: 125-150 psi (8,6-10,3 bar)</li>
+                            <li>Automatyczne hamulce pneumatyczne (standard we wszystkich pociągach)</li>
+                            <li>Hamulce elektropneumatyczne (EP) dla pociągów szybkobieżnych</li>
+                            <li>Aktywacja hamulca awaryjnego</li>
+                            <li>Konstrukcja bezpieczna — utrata powietrza automatycznie uruchamia hamulce</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Passenger Comfort & Operations -->
+                <div class="col-md-6 fade-in">
+                    <div class="railway-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <i class="bi bi-door-open"></i>
+                            <h4 class="mb-0"><span class="en">Passenger Comfort & Operations</span><span class="pl">Komfort Pasażerów i Eksploatacja</span></h4>
+                        </div>
+                        <p class="text-white-50 mb-2 en" style="font-size: 0.9rem;">Compressed air drives smooth, fast, and reliable operation of critical passenger-facing systems.</p>
+                        <p class="text-white-50 mb-2 pl" style="font-size: 0.9rem;">Sprężone powietrze zapewnia płynne, szybkie i niezawodne działanie kluczowych systemów obsługi pasażerów.</p>
+                        <ul class="en">
+                            <li>Automatic sliding door operation</li>
+                            <li>Cabin pressure regulation for high-speed tunnel transit</li>
+                            <li>Pantograph raise/lower for overhead power collection</li>
+                            <li>HVAC systems — air circulation and climate control</li>
+                        </ul>
+                        <ul class="pl">
+                            <li>Automatyczne otwieranie drzwi przesuwnych</li>
+                            <li>Regulacja ciśnienia w kabinie przy przejeździe tunelem</li>
+                            <li>Podnoszenie/opuszczanie pantografu do odbioru prądu</li>
+                            <li>Systemy HVAC — cyrkulacja powietrza i klimatyzacja</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Suspension & Ride Quality -->
+                <div class="col-md-6 fade-in">
+                    <div class="railway-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <i class="bi bi-activity"></i>
+                            <h4 class="mb-0"><span class="en">Suspension & Ride Quality</span><span class="pl">Zawieszenie i Jakość Jazdy</span></h4>
+                        </div>
+                        <p class="text-white-50 mb-2 en" style="font-size: 0.9rem;">Pneumatic suspension systems ensure passenger comfort at any speed.</p>
+                        <p class="text-white-50 mb-2 pl" style="font-size: 0.9rem;">Systemy zawieszenia pneumatycznego zapewniają komfort pasażerów przy każdej prędkości.</p>
+                        <ul class="en">
+                            <li>Pneumatic suspension for passenger comfort</li>
+                            <li>Automatic load leveling</li>
+                            <li>Vibration damping during high-speed operation</li>
+                        </ul>
+                        <ul class="pl">
+                            <li>Zawieszenie pneumatyczne dla komfortu pasażerów</li>
+                            <li>Automatyczne wyrównywanie obciążenia</li>
+                            <li>Tłumienie drgań podczas jazdy z dużą prędkością</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Auxiliary Systems -->
+                <div class="col-md-6 fade-in">
+                    <div class="railway-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <i class="bi bi-gear"></i>
+                            <h4 class="mb-0"><span class="en">Auxiliary Systems</span><span class="pl">Systemy Pomocnicze</span></h4>
+                        </div>
+                        <p class="text-white-50 mb-2 en" style="font-size: 0.9rem;">A wide range of secondary train systems depend on reliable compressed air supply.</p>
+                        <p class="text-white-50 mb-2 pl" style="font-size: 0.9rem;">Szeroki zakres wtórnych systemów pociągu zależy od niezawodnego zasilania sprężonym powietrzem.</p>
+                        <ul class="en">
+                            <li>Windscreen wipers (pneumatic)</li>
+                            <li>Horn and signaling systems</li>
+                            <li>Sanding systems for traction in adverse conditions</li>
+                            <li>Vacuum circuit breakers</li>
+                            <li>Tap changers in electrical systems</li>
+                        </ul>
+                        <ul class="pl">
+                            <li>Wycieraczki szyb (pneumatyczne)</li>
+                            <li>Systemy sygnalizacji dźwiękowej</li>
+                            <li>Systemy piaskowania dla trakcji w trudnych warunkach</li>
+                            <li>Wyłączniki próżniowe</li>
+                            <li>Przełączniki zaczepów w systemach elektrycznych</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Maintenance & Service Depots -->
+                <div class="col-12 fade-in">
+                    <div class="railway-card">
+                        <div class="d-flex align-items-center gap-3 mb-3">
+                            <i class="bi bi-tools"></i>
+                            <h4 class="mb-0"><span class="en">Maintenance & Service Depots</span><span class="pl">Zaplecze Serwisowe i Utrzymanie</span></h4>
+                        </div>
+                        <p class="text-white-50 mb-2 en" style="font-size: 0.9rem;">Railway repair workshops and rolling stock service facilities rely heavily on compressed air for daily operations.</p>
+                        <p class="text-white-50 mb-2 pl" style="font-size: 0.9rem;">Warsztaty naprawcze kolei i zaplecze serwisowe taboru w dużym stopniu polegają na sprężonym powietrzu w codziennej pracy.</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="en">
+                                    <li>Pneumatic tools for rolling stock repair and overhaul</li>
+                                    <li>Wagon and coach servicing workshops</li>
+                                    <li>Wheel and brake maintenance equipment</li>
+                                </ul>
+                                <ul class="pl">
+                                    <li>Narzędzia pneumatyczne do naprawy i przeglądu taboru</li>
+                                    <li>Warsztaty serwisowania wagonów i składów</li>
+                                    <li>Urządzenia do konserwacji kół i hamulców</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="en">
+                                    <li>Paint shops and surface preparation (sandblasting)</li>
+                                    <li>Cleaning systems for carriages and locomotives</li>
+                                    <li>Testing and diagnostic equipment</li>
+                                </ul>
+                                <ul class="pl">
+                                    <li>Lakiernie i przygotowanie powierzchni (piaskowanie)</li>
+                                    <li>Systemy czyszczenia wagonów i lokomotyw</li>
+                                    <li>Sprzęt testujący i diagnostyczny</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="fade-in">
+
+            <!-- Why Our Compressor for Railway -->
+            <h3 class="text-center mt-5 mb-4 fade-in" style="color: var(--text-secondary);"><span class="en">Why Our Compressor for Railway</span><span class="pl">Dlaczego Nasz Kompresor dla Kolei</span></h3>
+            <div class="row g-4 fade-in">
+                <div class="col-md-4">
+                    <div class="railway-benefits-card">
+                        <i class="bi bi-lightning-charge d-block mb-2"></i>
+                        <div class="benefit-value"><span class="en">30% Energy Savings</span><span class="pl">30% Oszczędności Energii</span></div>
+                        <p class="mt-2 en">Rail compressors operate 24/7 — our efficiency directly reduces one of the largest operating costs in rail infrastructure</p>
+                        <p class="mt-2 pl">Kompresory kolejowe pracują 24/7 — nasza wydajność bezpośrednio redukuje jeden z największych kosztów operacyjnych infrastruktury kolejowej</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="railway-benefits-card">
+                        <i class="bi bi-feather d-block mb-2"></i>
+                        <div class="benefit-value"><span class="en">60% Lighter</span><span class="pl">60% Lżejszy</span></div>
+                        <p class="mt-2 en">Critical for onboard train installations where every kilogram affects energy consumption and performance</p>
+                        <p class="mt-2 pl">Kluczowe dla instalacji pokładowych, gdzie każdy kilogram wpływa na zużycie energii i wydajność</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="railway-benefits-card">
+                        <i class="bi bi-volume-mute d-block mb-2"></i>
+                        <div class="benefit-value"><span class="en">4x Quieter</span><span class="pl">4x Cichszy</span></div>
+                        <p class="mt-2 en">Meets strict noise regulations at stations and depots, improving passenger comfort and workplace conditions</p>
+                        <p class="mt-2 pl">Spełnia surowe normy hałasu na stacjach i w zajezdniach, poprawiając komfort pasażerów i warunki pracy</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Engine Application -->
+    <section id="engine" class="py-5 bg-section-alt">
+        <div class="container">
+            <h2 class="section-title text-center fade-in"><span class="en">Engine Application</span><span class="pl">Zastosowanie jako Silnik</span></h2>
+            <p class="section-subtitle text-center mb-4 fade-in"><span class="en">Projected specifications based on design simulations for 1L displacement</span><span class="pl">Prognozowane parametry na podstawie symulacji projektowych dla pojemności 1L</span></p>
+
+            <div class="row g-4 align-items-start">
+                <div class="col-lg-6 fade-in">
+                    <div class="tech-image-container" style="min-height: 350px; background: #f5f5f5;">
+                        <img src="engine-assets/engine-3.png" alt="Engine Cross Section" class="tech-image" style="filter: none;">
+                        <span class="tech-image-label"><span class="en">Internal Architecture</span><span class="pl">Architektura Wewnętrzna</span></span>
+                    </div>
+                </div>
+                <div class="col-lg-6 fade-in">
+                    <table class="comparison-table">
+                        <tr>
+                            <th><span class="en">Specification</span><span class="pl">Specyfikacja</span></th>
+                            <th><span class="en">Traditional Piston</span><span class="pl">Tradycyjny Tłokowy</span></th>
+                            <th><span class="en">Rotary Machine</span><span class="pl">Maszyna Rotacyjna</span></th>
+                        </tr>
+                        <tr>
+                            <td><span class="en">Mass per Liter</span><span class="pl">Masa na Litr</span></td>
+                            <td>65-80 kg/L</td>
+                            <td class="highlight">30 kg/L</td>
+                        </tr>
+                        <tr>
+                            <td><span class="en">Power Output</span><span class="pl">Moc Wyjściowa</span></td>
+                            <td>40-60 kW/L</td>
+                            <td class="highlight">104 kW/L</td>
+                        </tr>
+                        <tr>
+                            <td>Max RPM</td>
+                            <td>6,000-8,000</td>
+                            <td class="highlight">10,000+</td>
+                        </tr>
+                        <tr>
+                            <td><span class="en">Noise Level</span><span class="pl">Poziom Hałasu</span></td>
+                            <td>85-95 dB</td>
+                            <td class="highlight">&lt;75 dB</td>
+                        </tr>
+                        <tr>
+                            <td><span class="en">Vibration</span><span class="pl">Wibracje</span></td>
+                            <td><span class="en">High</span><span class="pl">Wysokie</span></td>
+                            <td class="highlight"><span class="en">Minimal</span><span class="pl">Minimalne</span></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
+            <h3 class="text-center mt-5 mb-3" style="color: var(--text-secondary);"><span class="en">Target Industries</span><span class="pl">Docelowe Branże</span></h3>
+
+            <div class="row g-3">
+                <div class="col-md-6 col-lg-3 fade-in">
+                    <div class="glass-card d-flex align-items-start gap-3 h-100">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                <path d="M2 17l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4><span class="en">Defense Drones</span><span class="pl">Drony Obronne</span></h4>
+                            <p class="en">Combat and reconnaissance UAVs requiring high power-to-weight ratio and extended range</p>
+                            <p class="pl">Bojowe i rozpoznawcze UAV wymagające wysokiego stosunku mocy do masy i zwiększonego zasięgu</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 fade-in">
+                    <div class="glass-card d-flex align-items-start gap-3 h-100">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <rect x="2" y="7" width="20" height="10" rx="2"/>
+                                <circle cx="7" cy="17" r="2"/>
+                                <circle cx="17" cy="17" r="2"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4><span class="en">Armored Vehicles</span><span class="pl">Pojazdy Opancerzone</span></h4>
+                            <p class="en">Tanks and APCs benefiting from compact, powerful engines with reduced thermal and acoustic signature</p>
+                            <p class="pl">Czołgi i transportery opancerzone korzystające z kompaktowych, mocnych silników o zmniejszonej sygnaturze termicznej i akustycznej</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 fade-in">
+                    <div class="glass-card d-flex align-items-start gap-3 h-100">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path d="M4 19l4-4 4 4 4-4 4 4"/>
+                                <path d="M4 15l4-4 4 4 4-4 4 4"/>
+                                <path d="M4 11l4-4 4 4 4-4 4 4"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4><span class="en">Marine Vessels</span><span class="pl">Jednostki Morskie</span></h4>
+                            <p class="en">Cutters and patrol boats requiring quiet, efficient propulsion systems</p>
+                            <p class="pl">Kutry i łodzie patrolowe wymagające cichych, wydajnych systemów napędowych</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 fade-in">
+                    <div class="glass-card d-flex align-items-start gap-3 h-100">
+                        <div class="app-icon">
+                            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <h4><span class="en">Hybrid Powertrains</span><span class="pl">Napędy Hybrydowe</span></h4>
+                            <p class="en">Range extenders for electric vehicles combining efficiency with compact packaging</p>
+                            <p class="pl">Przedłużacze zasięgu pojazdów elektrycznych łączące wydajność z kompaktową zabudową</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Specifications -->
+    <section id="specs" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center fade-in"><span class="en">Technical Specifications</span><span class="pl">Specyfikacja Techniczna</span></h2>
+            <p class="section-subtitle text-center mb-4 fade-in"><span class="en">Detailed comparison with conventional piston technology</span><span class="pl">Szczegółowe porównanie z konwencjonalną technologią tłokową</span></p>
+
+            <div class="table-responsive fade-in">
                 <table class="comparison-table">
                     <tr>
-                        <th>Specification</th>
-                        <th>Traditional Piston</th>
-                        <th>Rotary Machine</th>
+                        <th><span class="en">Parameter</span><span class="pl">Parametr</span></th>
+                        <th><span class="en">Piston Engine</span><span class="pl">Silnik Tłokowy</span></th>
+                        <th><span class="en">Rotary Machine</span><span class="pl">Maszyna Rotacyjna</span></th>
+                        <th><span class="en">Advantage</span><span class="pl">Przewaga</span></th>
                     </tr>
                     <tr>
-                        <td>Mass per Liter</td>
+                        <td><span class="en">Chamber Diameter (1L)</span><span class="pl">Średnica Komory (1L)</span></td>
+                        <td>~80mm bore</td>
+                        <td>200mm</td>
+                        <td><span class="en">Simplified manufacturing</span><span class="pl">Uproszczona produkcja</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="en">Displacement</span><span class="pl">Pojemność</span></td>
+                        <td><span class="en">4x250cc cylinders</span><span class="pl">4x250cc cylindry</span></td>
+                        <td><span class="en">4x250cc chambers</span><span class="pl">4x250cc komory</span></td>
+                        <td><span class="en">Equivalent capacity</span><span class="pl">Równoważna pojemność</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="en">Engine Mass</span><span class="pl">Masa Silnika</span></td>
                         <td>65-80 kg/L</td>
                         <td class="highlight">30 kg/L</td>
+                        <td class="highlight"><span class="en">2-3x lighter</span><span class="pl">2-3x lżejszy</span></td>
                     </tr>
                     <tr>
-                        <td>Power Output</td>
+                        <td><span class="en">Power Density</span><span class="pl">Gęstość Mocy</span></td>
                         <td>40-60 kW/L</td>
                         <td class="highlight">104 kW/L</td>
+                        <td class="highlight"><span class="en">2x more powerful</span><span class="pl">2x mocniejszy</span></td>
                     </tr>
                     <tr>
-                        <td>Max RPM</td>
-                        <td>6,000-8,000</td>
-                        <td class="highlight">10,000+</td>
-                    </tr>
-                    <tr>
-                        <td>Noise Level</td>
+                        <td><span class="en">Operating Noise</span><span class="pl">Hałas Pracy</span></td>
                         <td>85-95 dB</td>
                         <td class="highlight">&lt;75 dB</td>
+                        <td class="highlight"><span class="en">2-4x quieter</span><span class="pl">2-4x cichszy</span></td>
                     </tr>
                     <tr>
-                        <td>Vibration</td>
-                        <td>High</td>
-                        <td class="highlight">Minimal</td>
+                        <td><span class="en">Maximum RPM</span><span class="pl">Maksymalne Obroty</span></td>
+                        <td>6,000-8,000</td>
+                        <td class="highlight">10,000+</td>
+                        <td class="highlight"><span class="en">30-50% higher</span><span class="pl">30-50% wyższe</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="en">Friction Losses</span><span class="pl">Straty Tarcia</span></td>
+                        <td>Baseline</td>
+                        <td class="highlight">-30%</td>
+                        <td class="highlight"><span class="en">Higher efficiency</span><span class="pl">Wyższa wydajność</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="en">Component Count</span><span class="pl">Liczba Komponentów</span></td>
+                        <td><span class="en">High (valvetrain, etc.)</span><span class="pl">Wysoka (rozrząd itp.)</span></td>
+                        <td class="highlight"><span class="en">Minimal</span><span class="pl">Minimalna</span></td>
+                        <td class="highlight"><span class="en">Better reliability</span><span class="pl">Lepsza niezawodność</span></td>
                     </tr>
                 </table>
             </div>
         </div>
+    </section>
 
-        <h3 style="text-align: center; margin: 3rem 0 1rem; color: var(--text-secondary);">Target Industries</h3>
+    <!-- Benefits Summary -->
+    <section id="benefits" class="py-5 bg-section-alt">
+        <div class="container">
+            <h2 class="section-title text-center fade-in"><span class="en">Benefits Summary</span><span class="pl">Podsumowanie Korzyści</span></h2>
+            <p class="section-subtitle text-center mb-4 fade-in"><span class="en">Comprehensive advantages across economic, environmental, and operational dimensions</span><span class="pl">Kompleksowe przewagi w wymiarze ekonomicznym, środowiskowym i operacyjnym</span></p>
 
-        <div class="applications-grid">
-            <div class="glass-card app-card fade-in">
-                <div class="app-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
-                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
-                        <path d="M2 17l10 5 10-5"/>
-                    </svg>
+            <div class="row g-4">
+                <div class="col-lg-4 fade-in">
+                    <div class="glass-card h-100">
+                        <h3 class="d-flex align-items-center gap-2 mb-3" style="font-size: 1.1rem; color: var(--accent-cyan);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
+                                <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
+                            </svg>
+                            <span class="en">Economic Benefits</span><span class="pl">Korzyści Ekonomiczne</span>
+                        </h3>
+                        <ul class="benefit-list en">
+                            <li><strong>30% electricity savings</strong> - the biggest operating cost</li>
+                            <li>$14,000+/year savings per 100HP compressor unit</li>
+                            <li>Lower production costs due to simpler design</li>
+                            <li>Reduced maintenance requirements</li>
+                            <li>Extended service intervals</li>
+                            <li>Fewer spare parts needed</li>
+                        </ul>
+                        <ul class="benefit-list pl">
+                            <li><strong>30% oszczędności energii</strong> - największy koszt operacyjny</li>
+                            <li>$14,000+/rok oszczędności na jednostkę kompresora 100HP</li>
+                            <li>Niższe koszty produkcji dzięki prostszej konstrukcji</li>
+                            <li>Mniejsze wymagania serwisowe</li>
+                            <li>Wydłużone interwały serwisowe</li>
+                            <li>Mniejsza liczba części zamiennych</li>
+                        </ul>
+                    </div>
                 </div>
-                <div>
-                    <h4>Defense Drones</h4>
-                    <p>Combat and reconnaissance UAVs requiring high power-to-weight ratio and extended range</p>
+                <div class="col-lg-4 fade-in">
+                    <div class="glass-card h-100">
+                        <h3 class="d-flex align-items-center gap-2 mb-3" style="font-size: 1.1rem; color: var(--accent-cyan);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
+                                <path d="M12 2a10 10 0 1010 10H12V2z"/>
+                                <path d="M12 2a10 10 0 00-10 10h10V2z"/>
+                            </svg>
+                            <span class="en">Environmental Benefits</span><span class="pl">Korzyści Środowiskowe</span>
+                        </h3>
+                        <ul class="benefit-list en">
+                            <li><strong>30% less energy consumption</strong> = smaller carbon footprint</li>
+                            <li>Limited or eliminated oil usage</li>
+                            <li>Higher fuel efficiency</li>
+                            <li>Reduced emissions potential</li>
+                            <li>Smaller material footprint (60% lighter)</li>
+                        </ul>
+                        <ul class="benefit-list pl">
+                            <li><strong>30% mniejsze zużycie energii</strong> = mniejszy ślad węglowy</li>
+                            <li>Ograniczone lub wyeliminowane użycie oleju</li>
+                            <li>Wyższa efektywność paliwowa</li>
+                            <li>Potencjał redukcji emisji</li>
+                            <li>Mniejszy ślad materiałowy (60% lżejszy)</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-            <div class="glass-card app-card fade-in">
-                <div class="app-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
-                        <rect x="2" y="7" width="20" height="10" rx="2"/>
-                        <circle cx="7" cy="17" r="2"/>
-                        <circle cx="17" cy="17" r="2"/>
-                    </svg>
-                </div>
-                <div>
-                    <h4>Armored Vehicles</h4>
-                    <p>Tanks and APCs benefiting from compact, powerful engines with reduced thermal and acoustic signature</p>
-                </div>
-            </div>
-            <div class="glass-card app-card fade-in">
-                <div class="app-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
-                        <path d="M4 19l4-4 4 4 4-4 4 4"/>
-                        <path d="M4 15l4-4 4 4 4-4 4 4"/>
-                        <path d="M4 11l4-4 4 4 4-4 4 4"/>
-                    </svg>
-                </div>
-                <div>
-                    <h4>Marine Vessels</h4>
-                    <p>Cutters and patrol boats requiring quiet, efficient propulsion systems</p>
-                </div>
-            </div>
-            <div class="glass-card app-card fade-in">
-                <div class="app-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5">
-                        <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                    </svg>
-                </div>
-                <div>
-                    <h4>Hybrid Powertrains</h4>
-                    <p>Range extenders for electric vehicles combining efficiency with compact packaging</p>
+                <div class="col-lg-4 fade-in">
+                    <div class="glass-card h-100">
+                        <h3 class="d-flex align-items-center gap-2 mb-3" style="font-size: 1.1rem; color: var(--accent-cyan);">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                            </svg>
+                            <span class="en">Operational Benefits</span><span class="pl">Korzyści Operacyjne</span>
+                        </h3>
+                        <ul class="benefit-list en">
+                            <li>Significantly quieter operation</li>
+                            <li>Minimal vibration</li>
+                            <li>Higher reliability</li>
+                            <li>Easy scalability</li>
+                            <li>Extended operational lifespan</li>
+                        </ul>
+                        <ul class="benefit-list pl">
+                            <li>Znacznie cichsza praca</li>
+                            <li>Minimalne wibracje</li>
+                            <li>Wyższa niezawodność</li>
+                            <li>Łatwa skalowalność</li>
+                            <li>Wydłużona żywotność operacyjna</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="specs" style="background: var(--bg-secondary); max-width: none; padding: 6rem 2rem;">
-        <div style="max-width: 1200px; margin: 0 auto;">
-            <h2 class="section-title fade-in">Technical Specifications</h2>
-            <p class="section-subtitle fade-in">Detailed comparison with conventional piston technology</p>
-
-            <table class="comparison-table fade-in">
-                <tr>
-                    <th>Parameter</th>
-                    <th>Piston Engine</th>
-                    <th>Rotary Machine</th>
-                    <th>Advantage</th>
-                </tr>
-                <tr>
-                    <td>Chamber Diameter (1L)</td>
-                    <td>~80mm bore</td>
-                    <td>200mm</td>
-                    <td>Simplified manufacturing</td>
-                </tr>
-                <tr>
-                    <td>Displacement</td>
-                    <td>4x250cc cylinders</td>
-                    <td>4x250cc chambers</td>
-                    <td>Equivalent capacity</td>
-                </tr>
-                <tr>
-                    <td>Engine Mass</td>
-                    <td>65-80 kg/L</td>
-                    <td class="highlight">30 kg/L</td>
-                    <td class="highlight">2-3x lighter</td>
-                </tr>
-                <tr>
-                    <td>Power Density</td>
-                    <td>40-60 kW/L</td>
-                    <td class="highlight">104 kW/L</td>
-                    <td class="highlight">2x more powerful</td>
-                </tr>
-                <tr>
-                    <td>Operating Noise</td>
-                    <td>85-95 dB</td>
-                    <td class="highlight">&lt;75 dB</td>
-                    <td class="highlight">2-4x quieter</td>
-                </tr>
-                <tr>
-                    <td>Maximum RPM</td>
-                    <td>6,000-8,000</td>
-                    <td class="highlight">10,000+</td>
-                    <td class="highlight">30-50% higher</td>
-                </tr>
-                <tr>
-                    <td>Friction Losses</td>
-                    <td>Baseline</td>
-                    <td class="highlight">-30%</td>
-                    <td class="highlight">Higher efficiency</td>
-                </tr>
-                <tr>
-                    <td>Component Count</td>
-                    <td>High (valvetrain, etc.)</td>
-                    <td class="highlight">Minimal</td>
-                    <td class="highlight">Better reliability</td>
-                </tr>
-            </table>
-        </div>
-    </section>
-
-    <section id="benefits">
-        <h2 class="section-title fade-in">Benefits Summary</h2>
-        <p class="section-subtitle fade-in">Comprehensive advantages across economic, environmental, and operational dimensions</p>
-
-        <div class="benefits-grid">
-            <div class="glass-card benefit-category fade-in">
-                <h3>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M12 2v20M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/>
-                    </svg>
-                    Economic Benefits
-                </h3>
-                <ul class="benefit-list">
-                    <li><strong>30% electricity savings</strong> - the biggest operating cost</li>
-                    <li>$14,000+/year savings per 100HP compressor unit</li>
-                    <li>Lower production costs due to simpler design</li>
-                    <li>Reduced maintenance requirements</li>
-                    <li>Extended service intervals</li>
-                    <li>Fewer spare parts needed</li>
-                </ul>
-            </div>
-            <div class="glass-card benefit-category fade-in">
-                <h3>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M12 2a10 10 0 1010 10H12V2z"/>
-                        <path d="M12 2a10 10 0 00-10 10h10V2z"/>
-                    </svg>
-                    Environmental Benefits
-                </h3>
-                <ul class="benefit-list">
-                    <li><strong>30% less energy consumption</strong> = smaller carbon footprint</li>
-                    <li>Limited or eliminated oil usage</li>
-                    <li>Higher fuel efficiency</li>
-                    <li>Reduced emissions potential</li>
-                    <li>Smaller material footprint (60% lighter)</li>
-                </ul>
-            </div>
-            <div class="glass-card benefit-category fade-in">
-                <h3>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-                        <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
-                    </svg>
-                    Operational Benefits
-                </h3>
-                <ul class="benefit-list">
-                    <li>Significantly quieter operation</li>
-                    <li>Minimal vibration</li>
-                    <li>Higher reliability</li>
-                    <li>Easy scalability</li>
-                    <li>Extended operational lifespan</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <section id="roadmap" style="background: var(--bg-secondary); max-width: none; padding: 6rem 2rem;">
-        <div style="max-width: 1000px; margin: 0 auto;">
-            <h2 class="section-title fade-in">Development Roadmap</h2>
-            <p class="section-subtitle fade-in">Current progress and upcoming milestones</p>
+    <!-- Development Roadmap -->
+    <section id="roadmap" class="py-5">
+        <div class="container" style="max-width: 1000px;">
+            <h2 class="section-title text-center fade-in"><span class="en">Development Roadmap</span><span class="pl">Plan Rozwoju</span></h2>
+            <p class="section-subtitle text-center mb-5 fade-in"><span class="en">Current progress and upcoming milestones</span><span class="pl">Aktualny postęp i nadchodzące kamienie milowe</span></p>
 
             <div class="roadmap fade-in">
-                <div class="roadmap-item">
-                    <div class="roadmap-dot completed"></div>
-                    <h4>Concept Design</h4>
-                    <p>Initial concept and feasibility study completed</p>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-dot completed"></div>
-                    <h4>Compressor Prototype</h4>
-                    <p>Working prototype demonstrating core technology</p>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-dot current"></div>
-                    <h4>Engine Design</h4>
-                    <p>Detailed engineering and simulation phase</p>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-dot future"></div>
-                    <h4>Engine Prototype</h4>
-                    <p>Build and test first engine prototype</p>
-                </div>
-                <div class="roadmap-item">
-                    <div class="roadmap-dot future"></div>
-                    <h4>Commercialization</h4>
-                    <p>Production partnerships and market entry</p>
+                <div class="row g-4">
+                    <div class="col roadmap-item">
+                        <div class="roadmap-dot completed"></div>
+                        <h4 style="font-size: 1rem;"><span class="en">Concept Design</span><span class="pl">Projekt Koncepcyjny</span></h4>
+                        <p><span class="en">Initial concept and feasibility study completed</span><span class="pl">Wstępna koncepcja i studium wykonalności ukończone</span></p>
+                    </div>
+                    <div class="col roadmap-item">
+                        <div class="roadmap-dot completed"></div>
+                        <h4 style="font-size: 1rem;"><span class="en">Compressor Prototype</span><span class="pl">Prototyp Kompresora</span></h4>
+                        <p><span class="en">Working prototype demonstrating core technology</span><span class="pl">Działający prototyp demonstrujący kluczową technologię</span></p>
+                    </div>
+                    <div class="col roadmap-item">
+                        <div class="roadmap-dot current"></div>
+                        <h4 style="font-size: 1rem;"><span class="en">Engine Design</span><span class="pl">Projekt Silnika</span></h4>
+                        <p><span class="en">Detailed engineering and simulation phase</span><span class="pl">Faza szczegółowego projektowania i symulacji</span></p>
+                    </div>
+                    <div class="col roadmap-item">
+                        <div class="roadmap-dot future"></div>
+                        <h4 style="font-size: 1rem;"><span class="en">Engine Prototype</span><span class="pl">Prototyp Silnika</span></h4>
+                        <p><span class="en">Build and test first engine prototype</span><span class="pl">Budowa i testowanie pierwszego prototypu silnika</span></p>
+                    </div>
+                    <div class="col roadmap-item">
+                        <div class="roadmap-dot future"></div>
+                        <h4 style="font-size: 1rem;"><span class="en">Commercialization</span><span class="pl">Komercjalizacja</span></h4>
+                        <p><span class="en">Production partnerships and market entry</span><span class="pl">Partnerstwa produkcyjne i wejście na rynek</span></p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="contact-section">
-        <h2 class="section-title fade-in">Get In Touch</h2>
-        <p class="section-subtitle fade-in">Interested in licensing, partnerships, or learning more about our technology?</p>
+    <!-- Contact -->
+    <section id="contact" class="py-5 bg-section-alt">
+        <div class="container">
+            <h2 class="section-title text-center fade-in"><span class="en">Get In Touch</span><span class="pl">Kontakt</span></h2>
+            <p class="section-subtitle text-center mb-4 fade-in"><span class="en">Interested in licensing, partnerships, or learning more about our technology?</span><span class="pl">Zainteresowany licencjonowaniem, współpracą lub poznaniem naszej technologii?</span></p>
 
-        <div class="glass-card contact-card fade-in">
-            <h3>Wojciech Sobczuk</h3>
-            <p class="contact-title">Inventor & Project Lead</p>
+            <div class="glass-card mx-auto fade-in" style="max-width: 500px; padding: 3rem;">
+                <h3 class="text-center mb-1" style="font-size: 1.5rem;">Wojciech Sobczuk</h3>
+                <p class="contact-title text-center mb-4"><span class="en">Inventor & Project Lead</span><span class="pl">Wynalazca i Kierownik Projektu</span></p>
 
-            <a href="tel:+48601226614" class="contact-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
-                    <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
-                </svg>
-                +48 601 226 614
-            </a>
+                <a href="tel:+48601226614" class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
+                    </svg>
+                    +48 601 226 614
+                </a>
 
-            <a href="mailto:wojtek@esvelo.com" class="contact-item">
-                <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
-                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                    <polyline points="22,6 12,13 2,6"/>
-                </svg>
-                wojtek@esvelo.com
-            </a>
+                <a href="mailto:wojtek@esvelo.com" class="contact-item">
+                    <svg viewBox="0 0 24 24" fill="none" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                    wojtek@esvelo.com
+                </a>
+            </div>
         </div>
     </section>
 
-    <footer>
-        <p>Revolutionary Rotary Machine Technology</p>
+    <footer class="text-center py-4">
+        <p class="mb-0"><span class="en">Revolutionary Rotary Machine Technology</span><span class="pl">Rewolucyjna Technologia Maszyny Rotacyjnej</span></p>
     </footer>
 
-    <script>
-        // Scroll animation observer
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Animate stat counters
-        const animateValue = (element, start, end, duration, suffix = '') => {
-            let startTimestamp = null;
-            const step = (timestamp) => {
-                if (!startTimestamp) startTimestamp = timestamp;
-                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
-                const value = Math.floor(progress * (end - start) + start);
-                element.textContent = value + suffix;
-                if (progress < 1) {
-                    window.requestAnimationFrame(step);
-                }
-            };
-            window.requestAnimationFrame(step);
-        };
-
-        const statObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting && !entry.target.dataset.animated) {
-                    entry.target.dataset.animated = 'true';
-                    const text = entry.target.textContent;
-                    const match = text.match(/(\d+)/);
-                    if (match) {
-                        const value = parseInt(match[1]);
-                        const suffix = text.replace(match[1], '');
-                        animateValue(entry.target, 0, value, 1500, suffix);
-                    }
-                }
-            });
-        }, { threshold: 0.5 });
-
-        document.querySelectorAll('.stat-value').forEach(el => {
-            statObserver.observe(el);
-        });
-
-        // Smooth scroll for nav links
-        document.querySelectorAll('nav a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/main.js"></script>
 </body>
 </html>

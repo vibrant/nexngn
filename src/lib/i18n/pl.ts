@@ -231,8 +231,6 @@ export const pl: Copy = {
   },
 
   footer: {
-    legal:
-      'NEX Engineering · Polska Sp. z o.o. · Lublin / Poznań · jurysdykcja UE i NATO',
     rights: '© 2026 NEX Engineering. Wszelkie prawa zastrzeżone.'
   }
 };

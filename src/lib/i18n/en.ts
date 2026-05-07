@@ -231,8 +231,6 @@ export const en = {
   },
 
   footer: {
-    legal:
-      'NEX Engineering · Polish SP. z o.o. · Lublin / Poznań, Poland · EU & NATO member-state jurisdiction',
     rights: '© 2026 NEX Engineering. All rights reserved.'
   }
 };

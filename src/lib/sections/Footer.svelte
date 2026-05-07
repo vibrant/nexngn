@@ -12,8 +12,5 @@
       </div>
       <div class="font-mono text-[10px] uppercase tracking-cad text-ink-300">{$t.footer.rights}</div>
     </div>
-    <div class="mt-6 max-w-prose-wide text-xs leading-relaxed text-ink-300">
-      {$t.footer.legal}
-    </div>
   </div>
 </footer>

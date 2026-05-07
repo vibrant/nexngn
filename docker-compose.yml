@@ -16,6 +16,7 @@ services:
       - "traefik.http.routers.nexngn.rule=Host(`nexngn.com`) || Host(`www.nexngn.com`)"
       - "traefik.http.routers.nexngn.entrypoints=websecure"
       - "traefik.http.routers.nexngn.tls=true"
+      - "traefik.http.routers.nexngn.tls.certresolver=letsencrypt"
       - "traefik.http.services.nexngn.loadbalancer.server.port=80"
 
 networks:

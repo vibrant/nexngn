@@ -132,20 +132,35 @@
   }
 }
 
-/* RotorAnimation keyframes — the signature visual */
-@keyframes rotor-spin {
+/* PhaseCycleRing keyframe — four static arc segments share this animation
+   with -3.5 s phase offsets, so the active colour walks once around the ring
+   per cycle (intake-blue → compression-amber → discharge-grey → idle).
+   No element rotates: only fill and opacity change in place. */
+@keyframes phase-cycle {
+  0%   { fill: #1d2330; opacity: 0.05; }
+  10%  { fill: #3b82f6; opacity: 0.42; }   /* INTAKE — blue */
+  25%  { fill: #3b82f6; opacity: 0.50; }
+  40%  { fill: #f59e0b; opacity: 0.65; }   /* COMPRESSION — peak amber */
+  50%  { fill: #d97706; opacity: 0.55; }
+  60%  { fill: #6b7280; opacity: 0.45; }   /* DISCHARGE — grey */
+  75%  { fill: #6b7280; opacity: 0.30; }
+  90%  { fill: #1d2330; opacity: 0.08; }   /* IDLE — fade */
+  100% { fill: #1d2330; opacity: 0.05; }
+}
+.phase-arc {
+  animation: phase-cycle 14s linear infinite;
+}
+/* Slow geometric rotation of the four-segment group — the segments hug the
+   ring's tangent (no radial spokes), so this reads as a gentle orbit, not
+   a propeller. Reference grid and rim stay static for a fixed CAD frame. */
+@keyframes ring-rotate {
   from { transform: rotate(0deg); }
   to   { transform: rotate(360deg); }
 }
-@keyframes rotor-counter {
-  from { transform: rotate(0deg); }
-  to   { transform: rotate(-360deg); }
-}
-@keyframes chamber-pulse {
-  0%, 100% { opacity: 0.18; }
-  25%      { opacity: 0.55; }
-  50%      { opacity: 0.18; }
-  75%      { opacity: 0.55; }
+.phase-arcs {
+  animation: ring-rotate 60s linear infinite;
+  transform-origin: center;
+  transform-box: fill-box;
 }
 @keyframes leader-fade {
   0%, 100% { opacity: 0.85; }
@@ -161,6 +176,10 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .rotor-blade-a, .rotor-blade-b, .chamber-region, .leader { animation: none !important; }
+  .phase-arc, .phase-arcs, .leader {
+    animation: none !important;
+  }
+  /* Freeze the ring on the intake-blue colour so the visual still reads as a cycle indicator. */
+  .phase-arc { fill: #3b82f6; opacity: 0.42; }
   html { scroll-behavior: auto; }
 }

@@ -1,6 +1,7 @@
 <script lang="ts">
   import { t } from '$lib/i18n/store';
   import LangToggle from './LangToggle.svelte';
+  import Logo from './Logo.svelte';
 
   let scrolled = $state(false);
   let mobileOpen = $state(false);
@@ -30,7 +31,8 @@
 >
   <div class="mx-auto flex h-14 max-w-page items-center justify-between px-6">
     <a href="#top" onclick={close} class="flex items-center gap-2 font-display text-xl text-ink-50 leading-none">
-      <span class="font-mono text-[11px] uppercase tracking-cad text-accent-400">NEX</span>
+      <Logo size={22} class="text-accent-400" />
+      <span>NEX</span>
       <span class="hidden sm:inline">Engineering</span>
     </a>
 

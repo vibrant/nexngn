@@ -1,6 +1,6 @@
 <script lang="ts">
   import { t } from '$lib/i18n/store';
-  import RotorAnimation from '$lib/components/RotorAnimation.svelte';
+  import PhaseCycleRing from '$lib/components/PhaseCycleRing.svelte';
 </script>
 
 <section id="how" class="frame bg-ink-900/40">
@@ -21,7 +21,7 @@
 
       <div class="md:col-span-7">
         <div class="mb-12 hidden md:block">
-          <RotorAnimation compact />
+          <PhaseCycleRing />
         </div>
 
         <ul class="space-y-8">

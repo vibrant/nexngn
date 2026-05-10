@@ -32,7 +32,7 @@ export const pl: Copy = {
       { num: 'TRL 5/6', unit: 'Gotowość sprężarki',                        label: 'Działający prototyp na stanowisku w odpowiednim reżimie pracy' },
       { num: '30%',     unit: 'energii vs. rotary-screw',                  label: 'Potwierdzone w laboratorium przy zrównanym CFM i ciśnieniu — pomiar na zaciskach silnika', delta: 'mniej' },
       { num: '4',       unit: 'Komory robocze na obrót',                   label: 'Komora kulista podzielona przez dwa współobrotowe wirniki' },
-      { num: '6',       unit: 'Zgłoszeń priorytetowych',                   label: 'Rdzeń, czas bez zaworów, objętość robocza, wielopaliwowość, tryb sprężarki, uszczelnienie' }
+      { num: '6',       unit: 'Rodzin patentowych · po PCT',               label: 'Po ekspertyzie PCT · wejście w fazę krajową w toku · rdzeń, czas bez zaworów, objętość robocza, wielopaliwowość, tryb sprężarki, uszczelnienie' }
     ]
   },
 
@@ -91,7 +91,7 @@ export const pl: Copy = {
         bullets: [
           '550 L/min wydajności teoretycznej, ciśnienie wylotowe 8 bar, napęd 3,5 kW przy 1 400 RPM',
           '30% oszczędności energii względem rotary-screw (potwierdzone laboratoryjnie, retest ISO 1217 w G0)',
-          '~60% lżejsza, <75 dB w odległości 1 m, praca bez oleju lub przy minimum oleju',
+          '~60% lżejsza; ~100× niższa moc akustyczna względem tłokowej (~5–6× cichsza dla ucha ludzkiego); praca bez oleju lub przy minimum oleju',
           'Gotowa do licencjonowania: Atlas Copco, Ingersoll Rand, Kaeser, Howden, Doosan, MHI'
         ]
       },
@@ -102,7 +102,7 @@ export const pl: Copy = {
         bullets: [
           '104 kW/L gęstość mocy · 4,71 KM/kg stosunek mocy do masy',
           'Benzyna, olej napędowy, wodór na tym samym sprzęcie — bez wymiany głowicy',
-          '<75 dB sygnatura akustyczna, 10 000+ RPM zapasu obrotowego',
+          '~5–6× cichszy dla ucha ludzkiego względem tłokowego (~100× niższa wypromieniowana moc akustyczna); 10 000+ RPM zapasu obrotowego',
           'Model CFD i cyklu termodynamicznego benchmarkowany z pomiarami sprężarki przy błędzie <5%'
         ]
       }
@@ -135,13 +135,13 @@ export const pl: Copy = {
 
   evidence: {
     eyebrow: 'Dowody',
-    title: '1,1 mln € wdrożone. Sześć patentów zgłoszonych. Działająca maszyna na stanowisku.',
+    title: '1,1 mln € wdrożone. Sześć rodzin patentowych po PCT. Działająca maszyna na stanowisku.',
     body:
-      'Dwadzieścia lat symulacji i iteracji prof. Henryka Sobczuka, plus środki założycielskie na precyzyjną budowę, instrumentowane stanowisko testowe i sześć zgłoszeń priorytetowych w Urzędzie Patentowym RP. Implikowany wskaźnik burn jest poniżej norm hardware deep-tech — to świadomy wybór na pojedynczy instrumentowany prototyp zamiast wieloitercacyjnej budowy.',
+      'Dwadzieścia lat symulacji i iteracji prof. Henryka Sobczuka, plus środki założycielskie na precyzyjną budowę, instrumentowane stanowisko testowe i sześć rodzin patentowych — zgłoszenia priorytetowe w Urzędzie Patentowym RP, wszystkie po ekspertyzie PCT, wejście w fazę krajową w toku. Implikowany wskaźnik burn jest poniżej norm hardware deep-tech — to świadomy wybór na pojedynczy instrumentowany prototyp zamiast wieloitercacyjnej budowy.',
     items: [
       { k: '1,1 mln €+', v: 'Inwestycja założycieli — niefakturowane R&D wynalazcy plus budowa prototypu' },
       { k: '20 lat', v: 'Projektu, symulacji i iteracji architektury rotacyjnej przez prof. Henryka Sobczuka' },
-      { k: '6',     v: 'Zgłoszeń priorytetowych · rdzeń, czas bez zaworów, objętość robocza, wielopaliwowość, tryb sprężarki, uszczelnienie' },
+      { k: '6',     v: 'Rodzin patentowych · po ekspertyzie PCT, wejście w fazę krajową w toku · rdzeń, czas bez zaworów, objętość robocza, wielopaliwowość, tryb sprężarki, uszczelnienie' },
       { k: 'TRL 5/6', v: 'Działający prototyp sprężarki potwierdzony w odpowiednim reżimie pracy' },
       { k: '<5%',  v: 'Błąd symulacji silnika względem pomiarów sprężarki — podstawa predykcji w trybie silnikowym' },
       { k: '8 bar', v: 'Ciśnienie tłoczenia na prototypie przy 550 L/min, 1 400 RPM, napęd 3,5 kW' }
@@ -213,7 +213,7 @@ export const pl: Copy = {
     eyebrow: 'Dwoje drzwi',
     titleLeft: 'Dla inwestorów',
     bodyLeft:
-      'Data room dla inwestorów zawiera pełny brief technologiczny, sześć zgłoszeń patentowych, ścieżkę kapitałową z wykorzystaniem środków na każdej bramce, projekcję P&L na 5 lat, benchmarki transakcji porównywalnych i 4-minutowy pitch wynalazcy. Zabezpieczone hasłem.',
+      'Data room dla inwestorów zawiera pełny brief technologiczny, sześć rodzin patentowych (po PCT, faza krajowa w toku), ścieżkę kapitałową z wykorzystaniem środków na każdej bramce, projekcję P&L na 5 lat, benchmarki transakcji porównywalnych i 4-minutowy pitch wynalazcy. Zabezpieczone hasłem.',
     btnLeft: 'Otwórz data room',
     titleRight: 'Dla corp-dev OEM i klientów',
     bodyRight:

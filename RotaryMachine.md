@@ -23,7 +23,7 @@ A novel rotary pumping mechanism that eliminates the limitations of traditional 
 
 ![Rotary Machine Concept](engine-assets/wireframe-1.png)
 
-*Proprietary Design - Patent Pending*
+*Proprietary Design — six patent families post-PCT examination, national-phase entry in progress*
 
 ### Simplified Architecture
 
@@ -47,7 +47,8 @@ Working prototype demonstrating revolutionary performance improvements.
 |--------|-------|
 | Electricity Savings | **30%** |
 | Weight Reduction | **60%+** |
-| Quieter Operation | **4x** |
+| Perceived Loudness vs Piston | **~5–6× quieter** (human-ear / dBA-weighted) |
+| Acoustic Power Emitted vs Piston | **~100× lower** |
 | Lower Friction | **30%+** |
 | Increased Durability | **20%+** |
 
@@ -111,7 +112,7 @@ Detailed comparison with conventional piston technology.
 | Displacement | 4x250cc cylinders | 4x250cc chambers | Equivalent capacity |
 | Engine Mass | 65-80 kg/L | **30 kg/L** | **2-3x lighter** |
 | Power Density | 40-60 kW/L | **104 kW/L** | **2x more powerful** |
-| Operating Noise | 85-95 dB | **<75 dB** | **2-4x quieter** |
+| Operating Noise | 85-95 dB | **<75 dB** | **~5–6× quieter perceived; ~100× lower acoustic power** |
 | Maximum RPM | 6,000-8,000 | **10,000+** | **30-50% higher** |
 | Friction Losses | Baseline | **-30%** | **Higher efficiency** |
 | Component Count | High (valvetrain, etc.) | **Minimal** | **Better reliability** |

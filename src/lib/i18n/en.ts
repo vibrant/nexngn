@@ -32,7 +32,7 @@ export const en = {
       { num: 'TRL 5/6', unit: 'Compressor readiness',  label: 'Working prototype on the bench in relevant operating regime' },
       { num: '30%',     unit: 'electricity vs. screw baseline', label: 'Lab-verified at matched CFM and pressure — savings measured at the motor terminals', delta: 'less' },
       { num: '4',       unit: 'Sub-chambers per revolution',     label: 'Spherical chamber partitioned by two co-rotating rotors' },
-      { num: '6',       unit: 'Priority patents',                label: 'Core, valveless timing, working-volume, multi-fuel, compressor mode, sealing' }
+      { num: '6',       unit: 'Patent families · post-PCT',      label: 'Post-PCT examination · national-phase entry in progress · core, valveless timing, working-volume, multi-fuel, compressor mode, sealing' }
     ]
   },
 
@@ -91,7 +91,7 @@ export const en = {
         bullets: [
           '550 L/min theoretical capacity, 8 bar discharge, 3.5 kW drive at 1,400 RPM',
           '30% electricity savings vs. rotary-screw baseline (lab-verified, ISO 1217 retest at G0)',
-          '~60% lighter, <75 dB at 1m, oil-free or minimal-oil operation',
+          '~60% lighter; ~100× lower acoustic power vs piston (~5–6× quieter to a human ear); oil-free or minimal-oil operation',
           'License-ready into Atlas Copco, Ingersoll Rand, Kaeser, Howden, Doosan, MHI'
         ]
       },
@@ -102,7 +102,7 @@ export const en = {
         bullets: [
           '104 kW/L power density · 4.71 HP/kg power-to-weight',
           'Petrol, diesel, hydrogen on the same hardware — no head swap',
-          '<75 dB acoustic signature, 10,000+ RPM headroom',
+          '~5–6× quieter perceptually vs piston (~100× lower radiated acoustic power); 10,000+ RPM headroom',
           'CFD + thermodynamic-cycle model benchmarked against compressor measurements at <5% error'
         ]
       }
@@ -135,13 +135,13 @@ export const en = {
 
   evidence: {
     eyebrow: 'Evidence',
-    title: '€1.1M deployed. Six patents filed. A working machine on the bench.',
+    title: '€1.1M deployed. Six patent families post-PCT. A working machine on the bench.',
     body:
-      'Twenty years of Prof. Henryk Sobczuk\'s simulation and iteration, plus founder cash for a precision build, instrumented test rig, and six Polish Patent Office priority filings. The implied burn multiple is well below hardware-deep-tech norms — a deliberate single-instrumented-prototype choice rather than a multi-iteration build.',
+      'Twenty years of Prof. Henryk Sobczuk\'s simulation and iteration, plus founder cash for a precision build, instrumented test rig, and six patent families — Polish priority filings, all post-PCT examination, national-phase entry in progress. The implied burn multiple is well below hardware-deep-tech norms — a deliberate single-instrumented-prototype choice rather than a multi-iteration build.',
     items: [
       { k: '€1.1M+', v: 'Founder investment to date — un-billed inventor R&D plus prototype build' },
       { k: '20 yrs', v: 'Design, simulation, iteration on the rotary architecture by Prof. Henryk Sobczuk' },
-      { k: '6',     v: 'Patent priority filings · core, valveless timing, working-volume, multi-fuel, compressor mode, sealing' },
+      { k: '6',     v: 'Patent families · post-PCT examination, national-phase entry in progress · core, valveless timing, working-volume, multi-fuel, compressor mode, sealing' },
       { k: 'TRL 5/6', v: 'Working compressor prototype validated in relevant operating regime' },
       { k: '<5%',  v: 'Engine simulation error vs. compressor measurements — basis for engine-mode predictions' },
       { k: '8 bar', v: 'Discharge pressure on the prototype at 550 L/min, 1,400 RPM, 3.5 kW drive' }
@@ -213,7 +213,7 @@ export const en = {
     eyebrow: 'Two doors',
     titleLeft: 'For investors',
     bodyLeft:
-      'The investor data room contains the full technology brief, six patent files, capital path with use-of-funds at each gate, five-year P&L, comparable-deal benchmarking, and a 4-minute inventor pitch. Password-gated.',
+      'The investor data room contains the full technology brief, six patent families (post-PCT, national-phase in progress), capital path with use-of-funds at each gate, five-year P&L, comparable-deal benchmarking, and a 4-minute inventor pitch. Password-gated.',
     btnLeft: 'Open the data room',
     titleRight: 'For OEM corp-dev & customers',
     bodyRight:

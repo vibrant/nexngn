@@ -1,0 +1,14 @@
+{
+  "name": "nexngn",
+  // The login reaches eight accounts; pin deploys to Esvelo.
+  "account_id": "84ef7da58668a2fe3b5bb63429716ebe",
+  "compatibility_date": "2026-09-15",
+  "assets": {
+    "directory": "./build",
+    "not_found_handling": "single-page-application"
+  },
+  "routes": [
+    { "pattern": "nexngn.com", "custom_domain": true },
+    { "pattern": "www.nexngn.com", "custom_domain": true }
+  ]
+}
